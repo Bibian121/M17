@@ -1,0 +1,6 @@
+framework module Pods_M17_Concurrency {
+  umbrella header "Pods-M17_Concurrency-umbrella.h"
+
+  export *
+  module * { export * }
+}

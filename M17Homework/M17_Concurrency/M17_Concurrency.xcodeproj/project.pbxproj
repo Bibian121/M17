@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		681C163ACC365150524DBD81 /* Pods_M17_Concurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8FFB6CE05944ACD6EC3D17 /* Pods_M17_Concurrency.framework */; };
 		947F612427610DE2000638DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947F612327610DE2000638DF /* AppDelegate.swift */; };
 		947F612627610DE2000638DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947F612527610DE2000638DF /* SceneDelegate.swift */; };
 		947F612827610DE2000638DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947F612727610DE2000638DF /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C8FFB6CE05944ACD6EC3D17 /* Pods_M17_Concurrency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_M17_Concurrency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		947F612027610DE2000638DF /* M17_Concurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M17_Concurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947F612327610DE2000638DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		947F612527610DE2000638DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		947F612F27610DE3000638DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		947F613127610DE3000638DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		947F613727610EAA000638DF /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A0B8553A2716208C67E4216F /* Pods-M17_Concurrency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M17_Concurrency.debug.xcconfig"; path = "Target Support Files/Pods-M17_Concurrency/Pods-M17_Concurrency.debug.xcconfig"; sourceTree = "<group>"; };
+		D6867810D2EDE88741D618EF /* Pods-M17_Concurrency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M17_Concurrency.release.xcconfig"; path = "Target Support Files/Pods-M17_Concurrency/Pods-M17_Concurrency.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				681C163ACC365150524DBD81 /* Pods_M17_Concurrency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43891BEEBB0EA449DC32F63E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C8FFB6CE05944ACD6EC3D17 /* Pods_M17_Concurrency.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		947F611727610DE2000638DF = {
 			isa = PBXGroup;
 			children = (
 				947F612227610DE2000638DF /* M17_Concurrency */,
 				947F612127610DE2000638DF /* Products */,
+				DC79CC9F1A9CEC1E1A104D3F /* Pods */,
+				43891BEEBB0EA449DC32F63E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +85,16 @@
 			path = M17_Concurrency;
 			sourceTree = "<group>";
 		};
+		DC79CC9F1A9CEC1E1A104D3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0B8553A2716208C67E4216F /* Pods-M17_Concurrency.debug.xcconfig */,
+				D6867810D2EDE88741D618EF /* Pods-M17_Concurrency.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 947F613427610DE3000638DF /* Build configuration list for PBXNativeTarget "M17_Concurrency" */;
 			buildPhases = (
+				F9CC51945543943CAA517453 /* [CP] Check Pods Manifest.lock */,
 				947F611C27610DE2000638DF /* Sources */,
 				947F611D27610DE2000638DF /* Frameworks */,
 				947F611E27610DE2000638DF /* Resources */,
+				B9273FE6433A586A4769B238 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +161,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9273FE6433A586A4769B238 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-M17_Concurrency/Pods-M17_Concurrency-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-M17_Concurrency/Pods-M17_Concurrency-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-M17_Concurrency/Pods-M17_Concurrency-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9CC51945543943CAA517453 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-M17_Concurrency-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		947F611C27610DE2000638DF /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		947F613527610DE3000638DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0B8553A2716208C67E4216F /* Pods-M17_Concurrency.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +375,7 @@
 		};
 		947F613627610DE3000638DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6867810D2EDE88741D618EF /* Pods-M17_Concurrency.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
